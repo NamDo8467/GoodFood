@@ -1,0 +1,15 @@
+.title{
+    margin-top: 5%;
+}
+h1{
+    text-align: center;
+    font-size: 46px;
+    color: rgb(31, 18, 95);
+    margin: 0;
+}
+hr{
+    width:5%;
+    height:5px;
+    background-color: #C59D5F;
+    border:none;
+}
