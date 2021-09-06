@@ -1,0 +1,23 @@
+.category-container {
+  width: 50%;
+  margin: 0 auto;
+}
+.category {
+  display: flex;
+  justify-content: space-between;
+}
+.category li {
+  list-style: none;
+  padding: 5px 10px;
+  color: #d88b19;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.category li:hover {
+  background-color: #c59d5f;
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
