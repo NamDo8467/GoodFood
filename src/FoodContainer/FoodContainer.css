@@ -1,15 +1,18 @@
+:root {
+  --skeleton-color: rgb(184, 179, 179);
+}
+
 .food-container {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
+
 .food {
   display: flex;
-  /* border: 2px solid black; */
   height: 170px;
   width: 480px;
- margin: 20px 50px 0 50px;
-  
+  margin: 20px 50px 0 50px;
 }
 
 .name {
@@ -18,21 +21,52 @@
 }
 .price {
   float: right;
-  color:  #C59D5F;
+  color: #c59d5f;
 }
 .information {
-    clear: left;
+  clear: left;
 }
-.line{
-    clear:both;
-    margin: 0 auto;
-    border-bottom: 1px solid rgb(90, 79, 79);
-    height:5px;
-    width: 100%;
+.line {
+  clear: both;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(90, 79, 79);
+  height: 5px;
+  width: 100%;
 }
-.food-image{
-    border: 5px solid #C59D5F;
-    margin-right: 30px;
-    
+.food-image {
+  border: 5px solid #c59d5f;
+  margin-right: 30px;
 }
 
+.food-image-skeleton {
+  background-color: var(--skeleton-color);
+  height: 150px;
+  width: 170px;
+  animation: skeleton 1s linear infinite alternate;
+}
+.name-skeleton,
+.price-skeleton {
+  height: 10px;
+  background-color: var(--skeleton-color);
+  width: 80px;
+  margin: 20px 10px;
+  border-radius: 5px;
+  animation: skeleton 1s linear infinite alternate;
+}
+.information-skeleton {
+  height: 10px;
+  background-color: var(--skeleton-color);
+  width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  animation: skeleton 1s linear infinite alternate;
+  opacity: 0.7;
+}
+@keyframes skeleton {
+  0% {
+    background-color: rgb(231, 235, 236);
+  }
+  100% {
+    background: var(--skeleton-color);
+  }
+}
