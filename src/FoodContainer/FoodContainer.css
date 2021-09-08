@@ -1,7 +1,6 @@
 :root {
   --skeleton-color: rgb(184, 179, 179);
 }
-
 .food-container {
   display: flex;
   width: 100%;
@@ -12,7 +11,14 @@
   display: flex;
   height: 170px;
   width: 480px;
-  margin: 20px 50px 0 50px;
+  margin: 20px 50px;
+}
+.food-image {
+  border: 5px solid #c59d5f;
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 150px;
+  width: 170px;
 }
 
 .name {
@@ -33,15 +39,12 @@
   height: 5px;
   width: 100%;
 }
-.food-image {
-  border: 5px solid #c59d5f;
-  margin-right: 30px;
-}
 
 .food-image-skeleton {
   background-color: var(--skeleton-color);
-  height: 150px;
-  width: 170px;
+  height: 130px;
+  width: 150px;
+  margin-top: 15px;
   animation: skeleton 1s linear infinite alternate;
 }
 .name-skeleton,
@@ -52,6 +55,7 @@
   margin: 20px 10px;
   border-radius: 5px;
   animation: skeleton 1s linear infinite alternate;
+  opacity: 0.7;
 }
 .information-skeleton {
   height: 10px;
@@ -68,5 +72,81 @@
   }
   100% {
     background: var(--skeleton-color);
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 490px) {
+  .food {
+    height: 170px;
+    width: 400px;
+    margin: 10px 0;
+  }
+  .food-image {
+    border: 5px solid #c59d5f;
+    margin-right: 10px;
+    margin-top: 12px;
+    height: 100px;
+    width: 120px;
+  }
+  .name,
+  .price,
+  .information {
+    font-size: 13px;
+  }
+  .food-image-skeleton {
+    height: 100px;
+    width: 120px;
+    margin-top: 15px;
+  }
+  .name-skeleton,
+  .price-skeleton {
+    height: 7px;
+    width: 80px;
+    margin: 20px 10px;
+  }
+  .information-skeleton {
+    height: 7px;
+    width: 230px;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .food {
+    height: 190px;
+    width: 450px;
+    margin: 10px 0;
+  }
+  .food-image {
+    margin-right: 10px;
+    margin-top: 12px;
+    height: 150px;
+    width: 170px;
+  }
+  .name,
+  .price,
+  .information {
+    font-size: 15px;
+  }
+  .food-image-skeleton {
+    height: 150px;
+    width: 170px;
+    margin-top: 20px;
+  }
+  .name-skeleton,
+  .price-skeleton {
+    height: 8px;
+    width: 100px;
+    margin: 25px 10px 20px 10px;
+  }
+  .name-skeleton {
+    width: 140px;
+  }
+  .price-skeleton {
+    width: 70px;
+  }
+  .information-skeleton {
+    height: 8px;
+    width: 280px;
+    margin: 10px;
   }
 }
