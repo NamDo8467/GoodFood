@@ -2,11 +2,11 @@
   width: 50%;
   margin: 0 auto;
 }
-.category {
+.category-list {
   display: flex;
   justify-content: space-between;
 }
-.category li {
+.category-list li {
   list-style: none;
   padding: 5px 10px;
   color: #d88b19;
@@ -15,9 +15,24 @@
   border-radius: 5px;
 }
 
-.category li:hover {
-  background-color: #c59d5f;
-  color: white;
+.category-list li:hover {
+  background-color: #c59d5f!important;
+  color: white!important;
   transition: background-color 0.5s ease, color 0.5s ease;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .category-container {
+    width: 100%;
+  }
+  .category-list {
+    justify-content: space-around;
+    padding: 0;
+  }
+  .category-list li {
+    padding: 3px 10px;
+    font-size: 17px;
+  }
+  
 }
